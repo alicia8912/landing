@@ -25,14 +25,51 @@
     .cta-final h2 { font-size: 28px; color: #1e1e1e; font-weight: normal; margin-bottom: 12px; }
     .cta-final p { color: #777; font-size: 15px; margin-bottom: 28px; font-family: 'Helvetica Neue', sans-serif; }
 
-    .beneficios { background-color: #e8d5c4; padding: 60px 20px; text-align: center; }
+    .beneficios { background-color: #e8d5c4; padding: 70px 20px; text-align: center; }
     .beneficios h2 { font-size: 28px; margin-bottom: 10px; font-weight: normal; color: #1e1e1e; }
-    .beneficios .sub { font-size: 16px; color: #7a6355; margin-bottom: 40px; font-family: 'Helvetica Neue', sans-serif; }
-    .dias-lista { max-width: 560px; margin: 0 auto; text-align: left; }
-    .dia-item { display: flex; align-items: baseline; gap: 16px; padding: 18px 0; border-bottom: 1px solid #d4b9a5; }
+    .beneficios .sub { font-size: 16px; color: #7a6355; margin-bottom: 50px; font-family: 'Helvetica Neue', sans-serif; }
+
+    .dias-lista { max-width: 580px; margin: 0 auto; text-align: left; }
+
+    .dia-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid #d4b9a5;
+    }
     .dia-item:last-child { border-bottom: none; }
-    .dia-item .numero { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #9b6a4a; font-family: 'Helvetica Neue', sans-serif; min-width: 48px; }
-    .dia-item p { font-size: 16px; color: #2c2c2c; line-height: 1.5; font-family: 'Helvetica Neue', sans-serif; }
+
+    .dia-numero {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      background-color: #9b6a4a;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      margin-top: 2px;
+    }
+
+    .dia-texto .titulo {
+      font-size: 16px;
+      font-weight: bold;
+      color: #1e1e1e;
+      margin-bottom: 4px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .dia-texto .descripcion {
+      font-size: 15px;
+      color: #6b5a50;
+      line-height: 1.5;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
 
     @media (max-width: 600px) { .hero h1 { font-size: 30px; } }
     footer { background-color: #fdf8f4; text-align: center; padding: 24px; font-size: 12px; color: #aaa; font-family: 'Helvetica Neue', sans-serif; }
@@ -65,15 +102,57 @@
 
   <div class="beneficios">
     <h2>¿Qué tiene la guía?</h2>
-    <p class="sub">7 días. 7 pequeños pasos. Sin agobios.</p>
+    <p class="sub">Siete días. Siete pequeños pasos. Sin agobios.</p>
     <div class="dias-lista">
-      <div class="dia-item"><span class="numero">Día 1</span><p>Empezar sin ganas — cómo romper la inercia</p></div>
-      <div class="dia-item"><span class="numero">Día 2</span><p>Activar el cuerpo — 15-20 min de movimiento</p></div>
-      <div class="dia-item"><span class="numero">Día 3</span><p>Quitarse el ruido mental — journaling 5-10 min</p></div>
-      <div class="dia-item"><span class="numero">Día 4</span><p>Alimentación que suma — comida real, proteína, agua</p></div>
-      <div class="dia-item"><span class="numero">Día 5</span><p>Autocuidado real — 20-30 min para ti, sin móvil</p></div>
-      <div class="dia-item"><span class="numero">Día 6</span><p>Disciplina sin drama — cumplir 1 hábito sí o sí</p></div>
-      <div class="dia-item"><span class="numero">Día 7</span><p>Parar y reconocer — reflexión y consolidación</p></div>
+      <div class="dia-item">
+        <div class="dia-numero">1</div>
+        <div class="dia-texto">
+          <div class="titulo">Empezar sin ganas</div>
+          <div class="descripcion">Cómo romper la inercia y dar el primer paso, aunque no apetezca.</div>
+        </div>
+      </div>
+      <div class="dia-item">
+        <div class="dia-numero">2</div>
+        <div class="dia-texto">
+          <div class="titulo">Activar el cuerpo</div>
+          <div class="descripcion">Entre 15 y 20 minutos de movimiento que se sientan bien, no como un castigo.</div>
+        </div>
+      </div>
+      <div class="dia-item">
+        <div class="dia-numero">3</div>
+        <div class="dia-texto">
+          <div class="titulo">Quitarse el ruido mental</div>
+          <div class="descripcion">Escribir durante 5 o 10 minutos para ordenar la cabeza y soltar lo que pesa.</div>
+        </div>
+      </div>
+      <div class="dia-item">
+        <div class="dia-numero">4</div>
+        <div class="dia-texto">
+          <div class="titulo">Alimentación que suma</div>
+          <div class="descripcion">Comida real, proteína y agua. Sin restricciones, sin culpa.</div>
+        </div>
+      </div>
+      <div class="dia-item">
+        <div class="dia-numero">5</div>
+        <div class="dia-texto">
+          <div class="titulo">Autocuidado de verdad</div>
+          <div class="descripcion">Entre 20 y 30 minutos solo para ti, sin móvil y sin interrupciones.</div>
+        </div>
+      </div>
+      <div class="dia-item">
+        <div class="dia-numero">6</div>
+        <div class="dia-texto">
+          <div class="titulo">Disciplina sin drama</div>
+          <div class="descripcion">Cumplir un hábito sí o sí, desde la constancia y no desde la exigencia.</div>
+        </div>
+      </div>
+      <div class="dia-item">
+        <div class="dia-numero">7</div>
+        <div class="dia-texto">
+          <div class="titulo">Parar y reconocer</div>
+          <div class="descripcion">Reflexionar sobre lo vivido y consolidar lo aprendido durante la semana.</div>
+        </div>
+      </div>
     </div>
   </div>
 
