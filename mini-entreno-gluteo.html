@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tu mini entreno de glúteo – Alice Molto</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdf8f4;
+      color: #2c2c2c;
+    }
+
+    .hero {
+      background-color: #f2e8df;
+      padding: 70px 20px 50px;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background-color: #e8d5c4;
+      color: #9b6a4a;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      color: #1e1e1e;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: #9b6a4a;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .como {
+      background-color: #e8d5c4;
+      padding: 50px 20px;
+    }
+
+    .como-inner {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .como h2, .ejercicios h2, .cierre-final h2 {
+      font-size: 28px;
+      font-weight: normal;
+      color: #1e1e1e;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .fila {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid #d4b9a5;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .fila:last-child { border-bottom: none; }
+
+    .fila .etiqueta {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #9b6a4a;
+      min-width: 92px;
+      white-space: nowrap;
+    }
+
+    .fila p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #2c2c2c;
+    }
+
+    .ejercicios {
+      padding: 60px 20px 20px;
+    }
+
+    .ejercicio {
+      max-width: 560px;
+      margin: 0 auto 56px;
+      text-align: center;
+    }
+
+    .ejercicio .num {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #9b6a4a;
+      font-family: 'Helvetica Neue', sans-serif;
+      margin-bottom: 8px;
+    }
+
+    .ejercicio h3 {
+      font-size: 26px;
+      font-weight: normal;
+      color: #1e1e1e;
+      margin-bottom: 6px;
+    }
+
+    .ejercicio .reps {
+      font-size: 15px;
+      color: #7a6355;
+      font-family: 'Helvetica Neue', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .video {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 9 / 16;
+      margin: 0 auto 20px;
+      border-radius: 16px;
+      overflow: hidden;
+      background-color: #e8d5c4;
+    }
+
+    .video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .tips {
+      list-style: none;
+      max-width: 360px;
+      margin: 0 auto;
+      text-align: left;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .tips li {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #2c2c2c;
+      padding: 8px 0 8px 22px;
+      position: relative;
+    }
+
+    .tips li::before {
+      content: "•";
+      color: #9b6a4a;
+      position: absolute;
+      left: 4px;
+    }
+
+    .cierre-final {
+      background-color: #f2e8df;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cierre-final .inner {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .cierre-final p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 16px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .cierre-final .firma {
+      font-size: 22px;
+      color: #9b6a4a;
+      margin-top: 10px;
+    }
+
+    .aviso {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 0 20px 30px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #999;
+      text-align: center;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 30px; }
+      .fila .etiqueta { min-width: 80px; }
+    }
+
+    footer {
+      background-color: #fdf8f4;
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: #aaa;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="tag">Tu mini entreno</div>
+      <h1>Mini entreno de glúteo.<br><em>Aquí empieza lo bueno.</em></h1>
+      <p>5 ejercicios para hacer en casa. Lee primero cómo se hace y luego dale al play.</p>
+    </div>
+  </div>
+
+  <!-- CÓMO HACERLO -->
+  <div class="como">
+    <div class="como-inner">
+      <h2>Cómo hacerlo</h2>
+      <div class="fila">
+        <span class="etiqueta">Formato</span>
+        <p>En circuito: los 5 ejercicios seguidos, descansas 60-90 segundos y repites.</p>
+      </div>
+      <div class="fila">
+        <span class="etiqueta">Vueltas</span>
+        <p>2 si estás empezando (unos 15 min). 3 si ya entrenas (unos 20 min).</p>
+      </div>
+      <div class="fila">
+        <span class="etiqueta">Repeticiones</span>
+        <p>10-15 por ejercicio. En la búlgara, la patada y la abducción, por pierna.</p>
+      </div>
+      <div class="fila">
+        <span class="etiqueta">Frecuencia</span>
+        <p>2-3 veces por semana, con al menos un día de descanso entre medias.</p>
+      </div>
+      <div class="fila">
+        <span class="etiqueta">Material</span>
+        <p>Dos mancuernas, una goma, una silla o banco y una esterilla. ¿Sin mancuernas? Una mochila con libros o un par de garrafas de agua te sirven para empezar.</p>
+      </div>
+      <div class="fila">
+        <span class="etiqueta">Antes</span>
+        <p>Calienta unos minutos: camina, haz unas sentadillas y unos puentes sin peso.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EJERCICIOS -->
+  <div class="ejercicios">
+    <h2>Los ejercicios</h2>
+
+    <div class="ejercicio">
+      <div class="num">Ejercicio 1</div>
+      <h3>Peso muerto rumano</h3>
+      <div class="reps">10-15 repeticiones</div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/gDzycpBtAKU?rel=0&playsinline=1" title="Peso muerto rumano" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <ul class="tips">
+        <li>Rodillas un poco flexionadas, sin bloquearlas: así el trabajo lo hace la cadera y lo notas en el glúteo</li>
+        <li>Lleva la cadera atrás, no te agaches</li>
+        <li>Mancuernas pegadas a las piernas</li>
+        <li>Espalda recta todo el recorrido</li>
+      </ul>
+    </div>
+
+    <div class="ejercicio">
+      <div class="num">Ejercicio 2</div>
+      <h3>Sentadilla búlgara</h3>
+      <div class="reps">10-15 repeticiones por pierna</div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/mizaRRT0hXQ?rel=0&playsinline=1" title="Sentadilla búlgara" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <ul class="tips">
+        <li>Para saber dónde ponerte: siéntate en el borde de la silla y estira una pierna. Donde quede tu talón, ahí va el pie de delante</li>
+        <li>Tronco un poco inclinado hacia delante</li>
+        <li>Fuerza en el talón del pie de delante</li>
+        <li>Baja lento y controlado</li>
+      </ul>
+    </div>
+
+    <div class="ejercicio">
+      <div class="num">Ejercicio 3</div>
+      <h3>Puente de glúteo con goma</h3>
+      <div class="reps">10-15 repeticiones</div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/vyKkx_p2A_o?rel=0&playsinline=1" title="Puente de glúteo con goma" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <ul class="tips">
+        <li>Empuja con los talones</li>
+        <li>Rodillas hacia fuera contra la goma</li>
+        <li>Aprieta arriba 2 segundos, sin arquear la zona lumbar</li>
+      </ul>
+    </div>
+
+    <div class="ejercicio">
+      <div class="num">Ejercicio 4</div>
+      <h3>Patada de glúteo</h3>
+      <div class="reps">10-15 repeticiones por pierna</div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/3-ICye-c4nc?rel=0&playsinline=1" title="Patada de glúteo" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <ul class="tips">
+        <li>Cadera recta, no la gires</li>
+        <li>Sube sin arquear la espalda</li>
+        <li>Baja controlado</li>
+      </ul>
+    </div>
+
+    <div class="ejercicio">
+      <div class="num">Ejercicio 5</div>
+      <h3>Abducción tumbada con goma</h3>
+      <div class="reps">10-15 repeticiones por pierna</div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/vkxF6j6PvAc?rel=0&playsinline=1" title="Abducción tumbada con goma" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <ul class="tips">
+        <li>Tumbada de lado, cuerpo en línea</li>
+        <li>Sube la pierna con el talón un poco hacia atrás</li>
+        <li>La cadera no se mueve ni rueda hacia atrás</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CIERRE -->
+  <div class="cierre-final">
+    <div class="inner">
+      <h2>Y ahora, a por ello</h2>
+      <p>Mañana lo notarás al sentarte. Es buena señal.</p>
+      <p>Cuando lo pruebes, responde al email en el que te llegó este entreno y cuéntame qué tal. Los leo todos.</p>
+      <div class="firma">Alice 🤍</div>
+    </div>
+  </div>
+
+  <p class="aviso">Si tienes alguna lesión, molestia o condición médica, consulta con un profesional antes de empezar. Si algún ejercicio te molesta, para.</p>
+
+  <footer>
+    © 2026 Alice Molto · <a href="https://alicemolto.com/privacidad" style="color:#aaa;">Política de privacidad</a>
+  </footer>
+
+</body>
+</html>
